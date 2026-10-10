@@ -2,47 +2,60 @@
 
 **Iron Order 1919 Fan Game / Prototype**
 
-A single-player strategy prototype heavily inspired by *Iron Order 1919*, *Call of War*, and the Supremacy engine games (Conflict of Nations, Supremacy 1914).
+Single-player strategy prototype inspired by *Iron Order 1919*, *Call of War*, and the Supremacy engine (Conflict of Nations, Supremacy 1914).
 
-This is a **fan project** – not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
+**Fan project** – not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
 
-## Features (current prototypes)
+## Latest: v0.5
 
-- Flat 1v1 map with city / resource tiles
-- Reactive bot AI that fortifies borders, produces units, patrols, scouts, and sends diplomacy messages
-- Buildings inspired by the real games: Barracks, Heavy Factory, Ordnance Foundry, Airbase, Naval Yard, Secret Lab, Power Plant, Industry, Recruiting Office, Railroads, Fortress, Capital
-- Multiple unit types (Infantry, Light/Heavy Mech, Artillery, Fighter, Scout)
-- Basic research tree
-- Terrain effects and movement lines
-- Resource system (Manpower, Metal, Oil, Rare, Gold, Research Points)
+- Larger 28×16 map with bigger tiles (56px)
+- Mouse-wheel zoom (no buttons)
+- Named cities on the map (DJANET, SABHA style labels)
+- Water / mountain / river / impassable terrain
+- Claim tiles by walking into them
+- Capture undefended cities – take all enemy cities to win
+- Unlimited build queues (buildings take time)
+- Timed research with expanded tech tree
+- Reactive bot that forms frontlines and contests neutrals
 
 ## How to play
 
-1. Download a release or open the HTML file in any modern browser.
-2. Click your units to select → click a tile to move.
-3. Click your cities/tiles to build or produce units.
-4. Watch the bot react when you approach its territory.
+1. Open the HTML file in any modern browser.
+2. Click a unit → click a province to move.
+3. Click a province you own to produce units or queue buildings.
+4. Mouse wheel to zoom the map.
+5. Research tab for the tech tree (research takes time).
 
-## Prototypes
+## Prototypes in this repo
 
-| Version | File | Description |
-|---------|------|-------------|
-| v0.1    | `prototypes/v1-basic.html` | First basic prototype (units, movement, simple bot) |
-| v0.2    | `prototypes/v2-full.html`  | Expanded version with buildings, research, diplomacy messages, better AI |
+| Version | Path | Notes |
+|---------|------|-------|
+| v0.1 | `prototypes/v1-basic.html` | Basic structure |
+| v0.2 | `prototypes/v2-full.html` | Early full prototype |
+| **v0.5** | `prototypes/v0.5.html` | Current – larger map, timed research, capture, zoom |
 
-## Roadmap (planned)
+> If `v0.5.html` is a short placeholder, replace it by uploading the full `iron_order_prototype.html` from your local build (the playable version developed in conversation).
 
-- Organic maps
-- Multiplayer lobbies with host rule control (gold on/off, etc.)
-- Coalitions / Clans
+## Creating a GitHub Release
+
+1. Go to the repo → **Releases** → **Draft a new release**
+2. Tag: `v0.5`
+3. Title: `v0.5 – Larger map & timed research`
+4. Attach the full HTML file as a binary asset
+5. Publish
+
+(There is currently no automated “create release” action available from the connected tools, so releases must be created in the GitHub UI.)
+
+## Roadmap
+
+- More Supremacy-like irregular provinces
+- Unit stacking
+- Fog of war / intel
+- Navy for water tiles
+- Multiplayer lobbies + host rules (gold on/off, etc.)
+- Coalitions / clans
 - Custom maps & gamemodes
-- Deeper tech trees and unit progression
-- Better espionage / intelligence system
 
 ## Disclaimer
 
-This is an independent fan prototype created for learning and fun. All rights to the original *Iron Order 1919* and related titles belong to their respective owners.
-
----
-
-Made with love for the long-term strategy genre.
+Independent fan prototype for learning and fun. All rights to the original titles belong to their respective owners.
