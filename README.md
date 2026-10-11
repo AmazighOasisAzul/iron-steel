@@ -6,16 +6,17 @@ Single-player province strategy inspired by *Iron Order 1919*, *Call of War*, an
 
 Fan project — not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
 
-## Latest: v0.7
+## Latest release: v0.7
 
-Playable build: **`iron-steel-v0.7.html`** (single HTML file — open in any modern browser).
+Playable build: **`iron-steel-v0.7.html`** — single HTML file, open in any modern browser.
 
-Download from the [releases page](https://github.com/AmazighOasisAzul/iron-steel/releases) or from `prototypes/iron-steel-v0.7.html` in this repo once the full file is committed.
+Download from the [releases page](https://github.com/AmazighOasisAzul/iron-steel/releases).
+
+**Next:** v0.8 (map fixes — square tiles on the 1v1 map, larger tiles; alternate shapes remain in code for later maps).
 
 ### Features (v0.7)
 
-- Large map (22×14) with large tiles and mouse-wheel zoom
-- Province shapes: rectangle, rounded, hexagon, pentagon, circle
+- Large map with mouse-wheel zoom
 - Unit models with stacking and selection panel
 - Coastal water and lakes at river ends; rivers always passable
 - Terrain affects movement and combat; plains are neutral
@@ -30,7 +31,7 @@ Download from the [releases page](https://github.com/AmazighOasisAzul/iron-steel
 
 ## How to play
 
-1. Download `iron-steel-v0.7.html` and open it in a browser.
+1. Download the HTML from the release and open it in a browser.
 2. Click a unit (or stack) → click a province to move.
 3. Click a province you own to produce units or queue buildings.
 4. Mouse wheel to zoom.
@@ -38,18 +39,21 @@ Download from the [releases page](https://github.com/AmazighOasisAzul/iron-steel
 
 ## Versions
 
-| Version | File | Notes |
-|---------|------|-------|
-| v0.1 | `prototypes/v1-basic.html` | Early structure |
-| v0.2 | `prototypes/v2-full.html` | Early full prototype |
-| v0.5 | `prototypes/v0.5.html` | Larger map, timed research, capture |
-| v0.6 | Release asset | Faction tint, larger tiles, market, debt → negatives, non-linear bot |
-| **v0.7** | `prototypes/iron-steel-v0.7.html` | Unit models, stacking UI, tile shapes, coastal water, ports, terrain combat |
+| Version | Notes |
+|---------|-------|
+| v0.1 | Basic structure |
+| v0.2 | Early full prototype |
+| v0.3 | UI / buildings expansion |
+| v0.4 | Terrain, capture, zoom |
+| v0.5 | Larger map, timed research, unlimited queues |
+| v0.6 | Faction tint, market, resource negatives, non-linear bot |
+| **v0.7** | **Current release** — unit models, stacking UI, coastal water, ports, terrain combat |
+| v0.8 | In progress — square 1v1 map, bigger tiles, map layout fixes |
 
 ## Roadmap
 
 - Map layout corrections and polish
-- More irregular province layouts
+- Alternate tile shapes for future map modes (not on the 1v1 grid)
 - Fog of war / intel
 - Stronger navy and air layers
 - Multiplayer lobbies and host rules
