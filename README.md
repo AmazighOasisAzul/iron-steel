@@ -1,60 +1,56 @@
 # Iron Steel
 
-**Iron Order 1919 Fan Game / Prototype**
+**Iron Order 1919–inspired fan prototype**
 
-Single-player strategy prototype inspired by *Iron Order 1919*, *Call of War*, and the Supremacy engine (Conflict of Nations, Supremacy 1914).
+Single-player province strategy inspired by *Iron Order 1919*, *Call of War*, and the Supremacy engine (*Conflict of Nations*, *Supremacy 1914*).
 
-**Fan project** – not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
+Fan project — not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
 
-## Latest: v0.5
+## Latest: v0.7
 
-- Larger 28×16 map with bigger tiles (56px)
-- Mouse-wheel zoom (no buttons)
-- Named cities on the map (DJANET, SABHA style labels)
-- Water / mountain / river / impassable terrain
-- Claim tiles by walking into them
-- Capture undefended cities – take all enemy cities to win
-- Unlimited build queues (buildings take time)
-- Timed research with expanded tech tree
-- Reactive bot that forms frontlines and contests neutrals
+Download the playable build: **[iron-steel-v0.7.html](prototypes/iron-steel-v0.7.html)** (open in any modern browser).
+
+### Features
+
+- Large map (22×14) with large tiles and mouse-wheel zoom
+- Province shapes: rectangle, rounded, hexagon, pentagon, circle
+- Unit models (infantry, armor, artillery, aircraft, ships) with stacking and selection panel
+- Coastal deep/shallow water and lakes at river ends; rivers always passable
+- Terrain affects movement and combat; plains are neutral
+- Claim tiles by moving in; capture undefended cities — take all enemy cities to win
+- Cities start with barracks and recruiting office
+- Port building when a city touches water
+- Timed research and build queues
+- Market (buy/sell resources for gold)
+- Resources can go negative if overspent (income recovers the balance)
+- Random faction color (Crimson / Cobalt)
+- Rule-based bot with front lines, flanks, and neutral city targets
 
 ## How to play
 
-1. Open the HTML file in any modern browser.
-2. Click a unit → click a province to move.
+1. Open `prototypes/iron-steel-v0.7.html` in a browser.
+2. Click a unit (or stack) → click a province to move.
 3. Click a province you own to produce units or queue buildings.
-4. Mouse wheel to zoom the map.
-5. Research tab for the tech tree (research takes time).
+4. Mouse wheel to zoom.
+5. Use Research, Market, and Diplomacy tabs in the sidebar.
 
-## Prototypes in this repo
+## Versions
 
-| Version | Path | Notes |
+| Version | File | Notes |
 |---------|------|-------|
-| v0.1 | `prototypes/v1-basic.html` | Basic structure |
+| v0.1 | `prototypes/v1-basic.html` | Early structure |
 | v0.2 | `prototypes/v2-full.html` | Early full prototype |
-| **v0.5** | `prototypes/v0.5.html` | Current – larger map, timed research, capture, zoom |
-
-> If `v0.5.html` is a short placeholder, replace it by uploading the full `iron_order_prototype.html` from your local build (the playable version developed in conversation).
-
-## Creating a GitHub Release
-
-1. Go to the repo → **Releases** → **Draft a new release**
-2. Tag: `v0.5`
-3. Title: `v0.5 – Larger map & timed research`
-4. Attach the full HTML file as a binary asset
-5. Publish
-
-(There is currently no automated “create release” action available from the connected tools, so releases must be created in the GitHub UI.)
+| v0.5 | `prototypes/v0.5.html` | Larger map, timed research, capture |
+| **v0.7** | **`prototypes/iron-steel-v0.7.html`** | Current playable build |
 
 ## Roadmap
 
-- More Supremacy-like irregular provinces
-- Unit stacking
+- More irregular province layouts
 - Fog of war / intel
-- Navy for water tiles
-- Multiplayer lobbies + host rules (gold on/off, etc.)
+- Stronger navy and air layers
+- Multiplayer lobbies and host rules
 - Coalitions / clans
-- Custom maps & gamemodes
+- Custom maps and gamemodes
 
 ## Disclaimer
 
