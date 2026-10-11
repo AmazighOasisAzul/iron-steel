@@ -6,11 +6,11 @@ Single-player province strategy inspired by *Iron Order 1919*, *Call of War*, an
 
 Fan project — not affiliated with Bytro Labs, Dorado Games, Twin Harbour Interactive, or Stillfront Group.
 
-## Latest release: v0.10
+## Latest releases: v0.9 / v0.10
 
 Playable builds on the [releases page](https://github.com/AmazighOasisAzul/iron-steel/releases).
 
-**Next:** v0.11 — full resource set (rare, food, cash), branched research trees, expanded market trades.
+**Next:** v0.11 — full resource set (**no rare**), cash, branched research trees, expanded market trades.
 
 ## How to play
 
@@ -33,8 +33,8 @@ Playable builds on the [releases page](https://github.com/AmazighOasisAzul/iron-
 | v0.7 | Unit models, stacking UI, coastal water, ports, terrain combat |
 | v0.8 | Square 1v1 map, larger tiles |
 | v0.9 | Full roster, Secret lab, emojis, 200px tiles, log toggle |
-| **v0.10** | **Current release** — resource market trades, timed unit production, gold locked, bot expansion |
-| v0.11 | In progress — rare/food/cash restored, research trees, 4 trades per resource |
+| **v0.10** | Resource market trades, timed unit production, gold locked, bot expansion |
+| v0.11 | In progress — Food/Goods/Cash restored (**no rare**), research trees, 4 trades per resource |
 
 ## Roadmap
 
