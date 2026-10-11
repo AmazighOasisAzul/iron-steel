@@ -8,7 +8,9 @@ Fan project — not affiliated with Bytro Labs, Dorado Games, Twin Harbour Inter
 
 ## Latest: v0.7
 
-Download the playable build: **[iron-steel-v0.7.html](prototypes/iron-steel-v0.7.html)** (open in any modern browser).
+Playable build: **`iron-steel-v0.7.html`** (single HTML file, open in any modern browser).
+
+Get it from the **[v0.7 release](https://github.com/AmazighOasisAzul/iron-steel/releases)** asset, or the download provided with this update.
 
 ### Features
 
@@ -28,7 +30,7 @@ Download the playable build: **[iron-steel-v0.7.html](prototypes/iron-steel-v0.7
 
 ## How to play
 
-1. Open `prototypes/iron-steel-v0.7.html` in a browser.
+1. Download `iron-steel-v0.7.html` and open it in a browser.
 2. Click a unit (or stack) → click a province to move.
 3. Click a province you own to produce units or queue buildings.
 4. Mouse wheel to zoom.
@@ -36,12 +38,10 @@ Download the playable build: **[iron-steel-v0.7.html](prototypes/iron-steel-v0.7
 
 ## Versions
 
-| Version | File | Notes |
-|---------|------|-------|
-| v0.1 | `prototypes/v1-basic.html` | Early structure |
-| v0.2 | `prototypes/v2-full.html` | Early full prototype |
-| v0.5 | `prototypes/v0.5.html` | Larger map, timed research, capture |
-| **v0.7** | **`prototypes/iron-steel-v0.7.html`** | Current playable build |
+| Version | Notes |
+|---------|-------|
+| v0.1–v0.5 | Early prototypes under `prototypes/` |
+| **v0.7** | Current playable build (`iron-steel-v0.7.html`) |
 
 ## Roadmap
 
