@@ -68,13 +68,53 @@ v0.19 is a single self-contained HTML file (inline CSS and JavaScript, canvas ma
 
 ## Roadmap
 
+### Near term (after playtest feedback)
+
 - Playtest balance (costs, phases, difficulty pacing)
-- Polish first map (rivers, ports, claims)
-- Facing/orientation polish where still imperfect
-- Fog of war / intel
-- Real audio when assets exist
+- Polish the first map (rivers not claimable; layout, port, and claim rules)
+- Facing / unit orientation polish where still imperfect
+- Bot refinements (frontlines, scouting, less stacking, clearer phase behavior)
+
+### Intel and fog of war
+
+- Fog of war / unexplored provinces
+- Scout and air intel ranges
+- Espionage-style information (unit presence, buildings, research signals)
+- Shared vision rules for future coalitions
+
+### UI expansion
+
+- Clearer command panel and province inspector
+- Better unit selection, stack list, and path preview
+- Battle report detail in the Event Log
+- Research tree layout improvements
+- Market and diplomacy readability
+- Minimap / strategic overview
+- Accessibility: contrast, scale, keyboard basics
+- In-match help overlays tied to How to Play
+
+### Audio
+
+- Real sound effects and music when assets exist (currently Coming Soon stubs)
+
+### Maps and content
+
 - Second map only after the first map and bot feel solid
-- Multiplayer, real checkout, and accounts when infrastructure exists
+- Custom maps (player-created layouts, cities, spawns)
+- Custom gamemodes (host rules: gold allowed/banned, timers, win conditions)
+
+### Multiplayer and social
+
+- Multiplayer lobbies and host rules
+- Real accounts, match history, and server-backed Gold wallet / checkout
+- **Coalitions / clans** (replacing classic “alliances” terminology)
+- Spectator and replay foundations
+
+### Later-stage systems
+
+- Persistent profile cosmetics fully wired to Gold Shop
+- Cross-match progression that does not break match balance
+- Mobile / touch layout pass if demand exists
 
 ## Disclaimer
 
