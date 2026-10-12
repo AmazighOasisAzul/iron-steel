@@ -32,7 +32,7 @@ Open the HTML file in a modern desktop browser. It runs offline, needs no instal
 - **Queue limits** (max 3 build / 3 train per city)
 - **Combat** continues each tick until one side is destroyed; paths cancel when battle starts
 - **Speed** 1× / 2× / 4× applied once via tick rate
-- **Seeded RNG** for reproducible matches
+- **Seeded RNG** for match randomness (under review — see roadmap)
 - **Clear feedback** on invalid or unreachable moves
 
 ### Core gameplay (carried forward)
@@ -71,9 +71,21 @@ v0.19 is a single self-contained HTML file (inline CSS and JavaScript, canvas ma
 ### Near term (after playtest feedback)
 
 - Playtest balance (costs, phases, difficulty pacing)
-- Polish the first map (rivers not claimable; layout, port, and claim rules)
+- **Fixed default 1v1 map** — restore / keep the original Frontier layout as the default; do not reshuffle terrain every seed
+- **Match seed policy** — remove map-seeding unless refined; seed may remain only for non-layout randomness (bot picks, etc.) or be dropped
 - Facing / unit orientation polish where still imperfect
 - Bot refinements (frontlines, scouting, less stacking, clearer phase behavior)
+
+### Map terrain rules (design law)
+
+When maps are authored or generated under rules:
+
+- **Deep water never touches land** — land meets shallow water only; deep water sits outside shallow
+- **Shallow water forms the coastal ring** around the map (and lake shores as needed)
+- **Rivers originate from mountain tiles** (flow from high ground)
+- **Impassable** only when fully surrounded by mountain tiles
+- **City placement** may be randomized under constraints; bulk terrain should stay coherent
+- Rivers remain passable for ground units but are not navigable water for ports/ships
 
 ### Intel and fog of war
 
@@ -97,11 +109,15 @@ v0.19 is a single self-contained HTML file (inline CSS and JavaScript, canvas ma
 
 - Real sound effects and music when assets exist (currently Coming Soon stubs)
 
-### Maps and content
+### Maps, map creation, and modes (Layer E — core long-term)
 
-- Second map only after the first map and bot feel solid
-- Custom maps (player-created layouts, cities, spawns)
+Map creation was planned from the start as a **core** part of the game, not a side feature.
+
+- Second official map only after the first map and bot feel solid
+- **Map creation** — authoring flow for terrain, cities, spawns, water rules, and win setup
+- Custom maps (load / share player-made layouts)
 - Custom gamemodes (host rules: gold allowed/banned, timers, win conditions)
+- **Larger tiles** under consideration for this layer (e.g. **400px** or **600px**) so provinces can hold more detail, multi-building clarity, and future tile shapes
 
 ### Multiplayer and social
 
