@@ -8,129 +8,131 @@ Fan project — not affiliated with Bytro Labs, Dorado Games, Twin Harbour Inter
 
 ---
 
-## Official public release: v0.19
+## Latest release: v0.23
 
-**v0.19 is the first official public playable release.**
-
-Earlier tags (v0.1–v0.18) were **prereleases** used while the prototype was iterated. v0.19 is the milestone build intended for public playtesting.
-
-[Download iron-steel-v0.19.html](https://github.com/AmazighOasisAzul/iron-steel/releases) from the [releases page](https://github.com/AmazighOasisAzul/iron-steel/releases) (attach the v0.19 asset to a `v0.19` release if it is not listed yet).
+Download **iron-steel-v0.23.html** from the [releases page](https://github.com/AmazighOasisAzul/iron-steel/releases).
 
 Open the HTML file in a modern desktop browser. It runs offline, needs no install, and does not contact a game server.
 
-### What is new in v0.19
+**v0.19** was the first official public playable milestone. **v0.20–v0.22** were prereleases. **v0.23** is the current published build.
 
-- **Main menu** — game does not start until **Start Match**
-- **Play Offline** setup: map, difficulty, faction (Crimson / Cobalt / Random), optional match seed
-- **Difficulty locked** for the match once it begins
-- **Pause menu**: Resume, Restart Match, Return to Main Menu
-- **Play Online** lobby shell (UI only — service not connected)
-- **Gold Shop** — account-level premium Gold wallet, data-driven packages, checkout placeholder (no real payments)
-- **How to Play** and **Credits / Version** screens
-- **Event Log** window with filters and unread badge
-- **Production requirements** (Barracks, Heavy factory, Ordnance foundry, Airbase, Port)
-- **Queue limits** (max 3 build / 3 train per city)
-- **Combat** continues each tick until one side is destroyed; paths cancel when battle starts
-- **Speed** 1× / 2× / 4× applied once via tick rate
-- **Seeded RNG** for match randomness (under review — see roadmap)
-- **Clear feedback** on invalid or unreachable moves
+### What is new in v0.23
 
-### Core gameplay (carried forward)
+- **Official favicon** — IRON / STEEL mark
+- **Gold Shop**
+  - Tabs: Buy premium currency | Buy a premium account | Cosmetics
+  - Original packs (Scout, Officer, General, Marshal) **plus** Supremacy-style scale packs (1,500–250,000 Gold)
+  - EUR prices; Popular tag on War Chest
+  - Premium account demo offer (checkout not connected)
+- **Global Commodity Exchange**
+  - Full trade-route table (expanded offers for food, metal, oil, cash)
+  - Stockpile bar and Market Reform efficiency
+  - Open by clicking **Food / Metal / Oil / Cash** on the top bar
+  - Market tab removed from the command sidebar
+- **Win-mode setup** — extra fields only appear for the selected win mode
+
+### From v0.20–v0.22 (included)
+
+- Longer base tick pace; 1× / 2× / 3× / 4× speed
+- Negative-balance confirmation modal (Spend anyway / Spend Gold / Cancel)
+- Desert terrain; deep-water isolation; destination-based move costs
+- Victory points (city 5, land 1, water/river 0) and multiple win modes
+- Combat roles by tile owner; full stack combat; capture after combat
+- Live **combat panel** (terrain, fort/capital, damage, losses)
+- Easy difficulty: bot never attacks or captures the player
+- Settings enforcement: gold ban, ground stack cap, air/navy off
+- Building limits, diminishing returns, bot income/production by difficulty
+- AI focus rotation (expand / defend / pressure)
+- Research panel shows RP and Secret Lab status
+
+### Core gameplay
 
 - **1v1 single-player** on the Frontier map (22 × 14 provinces, 200px tiles)
-- **12-unit roster** including militia, infantry lines, scout cars, mechs, AA, artillery, fighters, bombers, destroyers
+- Unit roster: militia, light/infantry lines, scout cars, mechs, AA, artillery, fighters, bombers, destroyers
 - **Match resources:** Food, Metal, Oil, Manpower, Cash, Research Points
-- **Gold** is a separate **account/premium** currency — not produced in matches and not used for combat balance
-- **Capital system**, upkeep, research trees, market trades, terrain modifiers
-- **Ground-only** tile and city capture; air and navy fight but do not claim land
-- **Bot campaign phases** with Easy / Normal / Hard behavior
+- **Gold** is account/premium currency — not produced in matches
+- Capital system, upkeep, research trees, terrain modifiers
+- Ground-only tile and city capture
+- Bot campaign phases with Easy / Normal / Hard
 
 ## How to play
 
-1. Download the **v0.19** HTML from [Releases](https://github.com/AmazighOasisAzul/iron-steel/releases).
+1. Download the latest HTML from [Releases](https://github.com/AmazighOasisAzul/iron-steel/releases).
 2. Open it in a modern browser.
-3. From the main menu choose **Play Offline**, set difficulty and faction, then **Start Match**.
+3. **Play Offline** → set difficulty, faction, optional win mode → **Start Match**.
 4. Click units, then a province, to move. Click an owned city to queue units or buildings.
-5. Use Research, Market, Diplomacy, the Events button, and the pause menu (☰).
+5. Click **Food / Metal / Oil / Cash** on the top bar for the commodity exchange.
+6. Use Research, Diplomacy, Events, and the pause menu (☰).
 
 ## Implementation status
 
-v0.19 is a single self-contained HTML file (inline CSS and JavaScript, canvas map). No build step, backend, multiplayer service, real payments, or account server. Preferences can be stored in the browser; the demo Gold wallet is local/demo only and is not a permanent store of truth for purchases.
+Single self-contained HTML file (inline CSS and JavaScript, canvas map). No build step, backend, multiplayer service, real payments, or account server. Preferences and demo Gold wallet use local browser storage only.
 
 ## Release history
 
 | Version | Status | Notes |
 |---------|--------|-------|
-| v0.1–v0.16 | Prerelease | Map, economy, bot, research, capital iterations |
-| v0.17 | Prerelease | Difficulty, air fuel/shadow, diplomacy replies |
-| v0.18 | Prerelease | Facing direction, plane faction color fix |
-| **v0.19** | **Official public playable** | Menus, Gold Shop shell, Event Log, production gates, combat/speed fixes, multiplayer-ready UI foundations |
+| v0.1–v0.18 | Prerelease | Map, economy, bot, research, capital iterations |
+| **v0.19** | First official public playable | Menus, Gold Shop shell, Event Log, production gates |
+| v0.20–v0.22 | Prerelease | Pace, combat fixes, AI, market/terrain polish |
+| **v0.23** | **Current release** | Favicon, full Gold Shop packs, commodity exchange, win-mode UI |
 
 ## Roadmap
 
-### Near term (after playtest feedback)
+### Near term
 
 - Playtest balance (costs, phases, difficulty pacing)
-- **Fixed default 1v1 map** — restore / keep the original Frontier layout as the default; do not reshuffle terrain every seed
-- **Match seed policy** — remove map-seeding unless refined; seed may remain only for non-layout randomness (bot picks, etc.) or be dropped
-- Facing / unit orientation polish where still imperfect
-- Bot refinements (frontlines, scouting, less stacking, clearer phase behavior)
+- Fixed default 1v1 map layout as the stable baseline
+- Facing / unit orientation polish
+- Bot refinements (frontlines, scouting, less stacking)
 
 ### Map terrain rules (design law)
 
-When maps are authored or generated under rules:
-
-- **Deep water never touches land** — land meets shallow water only; deep water sits outside shallow
-- **Shallow water forms the coastal ring** around the map (and lake shores as needed)
-- **Rivers originate from mountain tiles** (flow from high ground)
-- **Impassable** only when fully surrounded by mountain tiles
-- **City placement** may be randomized under constraints; bulk terrain should stay coherent
-- Rivers remain passable for ground units but are not navigable water for ports/ships
+- **Deep water never touches land** — shallow water between deep and land
+- **Shallow water** forms coastal rings and lake shores
+- **Rivers** from mountain tiles; passable for ground, not claimable, 0 VP, not navigable for navy
+- **Impassable** only when fully surrounded by mountains
+- City placement may vary; bulk terrain stays coherent
 
 ### Intel and fog of war
 
 - Fog of war / unexplored provinces
 - Scout and air intel ranges
-- Espionage-style information (unit presence, buildings, research signals)
-- Shared vision rules for future coalitions
+- Espionage-style information
+- Shared vision for future coalitions
 
 ### UI expansion
 
-- Clearer command panel and province inspector
-- Better unit selection, stack list, and path preview
-- Battle report detail in the Event Log
+- Province inspector / floating city card
+- Better unit selection, stack list, path preview
+- Combat panel as map-anchored or collapsible drawer
 - Research tree layout improvements
-- Market and diplomacy readability
 - Minimap / strategic overview
 - Accessibility: contrast, scale, keyboard basics
-- In-match help overlays tied to How to Play
 
 ### Audio
 
-- Real sound effects and music when assets exist (currently Coming Soon stubs)
+- Sound effects and music when assets exist (currently Coming Soon)
 
-### Maps, map creation, and modes (Layer E — core long-term)
+### Maps, map creation, and modes
 
-Map creation was planned from the start as a **core** part of the game, not a side feature.
-
-- Second official map only after the first map and bot feel solid
-- **Map creation** — authoring flow for terrain, cities, spawns, water rules, and win setup
-- Custom maps (load / share player-made layouts)
-- Custom gamemodes (host rules: gold allowed/banned, timers, win conditions)
-- **Larger tiles** under consideration for this layer (e.g. **400px** or **600px**) so provinces can hold more detail, multi-building clarity, and future tile shapes
+- Second official map after the first map and bot feel solid
+- **Map creation** — terrain, cities, spawns, water rules, win setup
+- Custom maps and gamemodes (host rules: gold, win conditions, toggles)
+- Larger tiles under consideration (e.g. 400px / 600px)
 
 ### Multiplayer and social
 
 - Multiplayer lobbies and host rules
-- Real accounts, match history, and server-backed Gold wallet / checkout
-- **Coalitions / clans** (replacing classic “alliances” terminology)
+- Real accounts, match history, server-backed Gold wallet / checkout
+- **Coalitions / clans**
 - Spectator and replay foundations
 
 ### Later-stage systems
 
-- Persistent profile cosmetics fully wired to Gold Shop
+- Cosmetics fully wired to Gold Shop
 - Cross-match progression that does not break match balance
-- Mobile / touch layout pass if demand exists
+- Mobile / touch layout if demand exists
 
 ## Disclaimer
 
